@@ -1,0 +1,152 @@
+body {
+  text-align: center;
+  background-color: #10345e;
+}
+
+h1 {
+  margin: 0;
+  margin-top: 0.25%;
+  font-size: 5rem;
+  color: silver;
+  font-family: "Philosopher", sans-serif;
+  text-shadow: 3px 0 10px black;
+}
+
+footer {
+  margin-bottom: 1.5%;
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+.set {
+  margin: 0% auto;
+}
+
+.piano-cover {
+  margin: 1.5% 145px 0%;
+  height: 150px;
+  background-color: black;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0 12px 0 0 #202020;
+  position: relative;
+  z-index: 1;
+}
+
+.piano-cover p {
+  color: #2f2f2f;
+  font-size: 1.5rem;
+  font-family: "Philosopher", sans-serif;
+  font-style: italic;
+  margin: 0;
+  text-align: right;
+  padding-top: 105px;
+  padding-right: 30px;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  color: red;
+}
+
+.key {
+  outline: none;
+  border: none;
+  box-shadow: 0 12px 0 gray;
+  font-size: 5rem;
+  font-family: "Philosopher", sans-serif;
+  line-height: 2;
+  font-weight: 900;
+  color: #e2e2e2;
+  border-radius: 0 0 15px 15px;
+
+  display: inline-block;
+  width: 150px;
+  height: 375px;
+
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 3%;
+  background-color: white;
+}
+
+.key p {
+  margin: 0;
+  margin-top: 225px;
+}
+
+.black-key {
+  outline: none;
+  border: none;
+  box-shadow: 0 15px 0 black;
+  font-size: 5rem;
+  font-family: "Philosopher", sans-serif;
+  line-height: 2;
+  font-weight: 900;
+  color: #3f3f3f;
+  border-radius: 0 0 15px 15px;
+
+  display: inline-block;
+  width: 100px;
+  height: 250px;
+
+  z-index: 2;
+
+  text-align: center;
+  margin: 0px;
+  background-color: #2f2f2f;
+}
+
+.black-key p {
+  margin: 0;
+  margin-top: 100px;
+}
+
+.e {
+  position: absolute;
+  top: 287px;
+  left: calc(0px + 0px + 232px + 153px - 125px);
+}
+
+.r {
+  position: absolute;
+  top: 287px;
+  left: calc(150px + 3px + 232px + 153px - 125px);
+}
+
+.y {
+  position: absolute;
+  top: 287px;
+  left: calc(300px + 8px + 232px + 2*153px - 125px);
+}
+
+.u {
+  position: absolute;
+  top: 287px;
+  left: calc(450px + 12px + 232px + 2*153px - 125px);
+}
+
+.i {
+  position: absolute;
+  top: 287px;
+  left: calc(600px + 16px + 232px + 2*153px - 125px);
+}
+
+
+/***************** JS enabled and disabled classes *******************/
+
+.white-pressed {
+  box-shadow: none;
+  box-shadow: inset 20px 20px 10px 0 #DBEDF3;
+  height: calc(375px + 12px);
+  margin-bottom: calc(3% - 12px);
+}
+
+.black-pressed {
+  box-shadow: none;
+  box-shadow: inset 5px 10px 10px 0 black;
+  height: calc(250px + 15px);
+}
